@@ -4,10 +4,10 @@
 	xmlns:f="http://xmlns.jcp.org/jsf/core">
 <h:head>
 
-<meta charset="UTF-8"/>
-<title>Gestão Empresas</title>
+	<meta charset="UTF-8"/>
+	<title>Ajuda</title>
 
-<h:outputStylesheet library="algaworks" name="estilo.css"/>
+	<h:outputStylesheet library="algaworks" name="estilo.css"/>
 
 </h:head>
 <body>
@@ -15,17 +15,16 @@
 	<header>
 		<h:graphicImage  library="algaworks" name="logo.png"/>
 	</header>
+	
+	<h2>Ajuda</h2>
 		
-		<div>
+		<div id="conteudo">
 			<h:form>
-				<h:panelGrid columns="2">
-					<h:outputLabel value="Número: "/>
-					<h:outputText value="#{gestaoEmpresasBean.numero}"/>
-			
-					<h:outputLabel/>				
-					<h:commandButton value="Salvar"/>
-				</h:panelGrid>
+				<p>Esta e a ajuda da pagina de cadastro de empresas</p>
 				
+				<p>
+					<h:commandLink value="Voltar" action="GestaoEmpresas?faces-redirect=true"/>
+				</p>
 			</h:form>
 		</div>
 	
